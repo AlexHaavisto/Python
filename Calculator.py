@@ -24,7 +24,7 @@ print("4.Divide")
 
 while True:
     # take input from the user
-    choice = input("Enter choice(1/2/3/4): ")
+    choice = input("Enter choice(1.add/2.subtract/3.multiply/4.divide): ")
 
     # check if choice is one of the four options
     if choice in ('1', '2', '3', '4'):
@@ -45,7 +45,7 @@ while True:
         
         # check if user wants another calculation
         # break the while loop if answer is no
-        next_calculation = input("Let's do next calculation? (yes/no): ")
+        next_calculation = input("Another calculation? (yes/no): ")
         if next_calculation == "no":
           break
     
