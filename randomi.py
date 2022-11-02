@@ -1,23 +1,23 @@
 import random
 
-PelaajaVoitot = 0
-BotiVoitot = 0
+PlayerWins = 0
+BotWins = 0
 
-#Merkitykset
-# 0 = kivi
-# 1 = paperi
-# 2 = sakset
+#Meanings
+# 0 = rock
+# 1 = paper
+# 2 = scissors
 
 while True:
-    print("0 = kivi, 1 = paperi, 2 = sakset, 4 = exit")
-    PelaajanLiike = int(input("Tee Liikkeesi: "))
-    BotinLiike = random.randint(0, 2)
+    print("0 = rock, 1 = paper, 2 = scissors, 4 = exit")
+    Player movement = int(input("Make your move: "))
+    Bot movement = random.randint(0, 2)
     
-    if(PelaajanLiike == 4):
+    if(Player movement == 4):
         break
-    elif(PelaajanLiike == 0 and BotinLiike == 2):
-        print("Kivi voittaa sakset! Pelaaja + 1")
-    elif(PelaajanLiike == 1 and BotinLiike == 0):
-        print("Paperi voittaa kiven! Pelaaja + 1")
-    elif(PelaajanLiike == 2 and BotinLiike == 0):
+    elif(Player movement == 0 and Bot movement == 2):
+        print("Rock beats scissors! Player + 1")
+    elif(Player movement == 1 and Bot movement == 0):
+        print("Paper beats rock! Player + 1")
+    elif(Player movement == 2 and Bot movement == 0):
         print
