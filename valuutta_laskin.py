@@ -34,6 +34,6 @@ class MyWindow:
 
 window=Tk()
 mywin=MyWindow(window)
-window.title('Hello Python')
+window.title('Python')
 window.geometry("400x300+10+10")
 window.mainloop()
